@@ -1,41 +1,102 @@
 /* navbar */
 header {
     background-color: #98ac7c;
-    padding: 10px; 
+    padding: 10px;
+    width: 100%;
 }
+
+    header h1 {
+        font-size: 2px; /* Set heading size */
+        margin: 0; /* Remove default margin from heading */
+    }
+
+        header h1 a { /* Assuming logo is wrapped in an anchor tag */
+            text-decoration: none; /* Remove underline from logo link */
+            color: inherit; /* Inherit text color from header */
+        }
+
 nav {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .logo img {
     display: block;
     margin-left: 100px;
 }
-.nav-items{
+
+.nav-items {
     margin-right: 100px;
 }
-.nav-items li {
-    display: inline-block; 
-    margin-right: 20px; 
-}
-.nav-items a {
-    color: #F3FFE3;
-    text-decoration: none;
-    padding: 25px;
-    font-size: 18px;
-}
-.nav-items a:hover {
-    background-color: #F3FFE3;
-    color: darkgreen; 
-}
-.nav-items .active {
-    background-color: #98ac7c;
-    color: #f1f1f1; 
-    text-decoration: underline;
-}
 
+    .nav-items li {
+        display: inline-block;
+        margin-right: 20px;
+        font-family: Georgia;
+    }
 
+    .nav-items a {
+        color: #F3FFE3;
+        text-decoration: none;
+        padding: 25px;
+        font-size: 18px;
+    }
+
+        .nav-items a:hover {
+            background-color: #F3FFE3;
+            color: darkgreen;
+        }
+
+    .nav-items .active {
+        background-color: #98ac7c;
+        color: #f1f1f1;
+        text-decoration: underline;
+    }
+    footer {
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+        color: black;  /*Set font color to black */
+        width: 100%;
+    }
+    
+    footer p {
+        margin: 5px;
+        color: black;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: black; /* Set font color to black */
+    }
+    
+        footer a:hover {
+            text-decoration: underline; /* Underline link on hover */
+        }
+    
+    footer address {
+        color: black; /* Set font color to black */
+    }
+    
+    footer #footer-button {
+        background-color: black;
+        color: darkolivegreen;
+        border: solid 3px;
+        border-radius: 5px;
+        text-align: right;
+        margin-right: 10px;
+        padding: 10px 20px;
+        font-size: 20px;
+    
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    
+    footer #footer-button:hover {
+        background-color: gray;
+    }
 
 /* Splash Screen */
 .splash{

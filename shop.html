@@ -160,7 +160,6 @@
                     </ul>
                     <p>Total Amount: £${totalAmount.toFixed(2)}</p>  <!-- Display total amount -->
                 </div>
-                <a href="pageEditor_ST1.html">Editor's Page</a>
             `;
             document.body.innerHTML = checkoutForm; // Set the HTML content to the constructed checkout form
 
@@ -229,28 +228,19 @@ function clearFields(payment){ // Function to clear fields in a payment section
         window.onload = displayItems; // Set the window onload event handler to display items
         
     </script>
-    <footer>
-
-
-
-        <button id="button" title="Top">Return To Top</button>
-
-        <br><br>
-
-        <p><a href="PageEditor.html" target="_blank">Page Editor</a></p>
-
-
-
-        <img src="images/logo.png" alt="logo" width="200" height="140">
-
-
-
-        <p><address>helth@westminster.ac.uk</address></p>
-
-        <p>&copy; 2024 Helth. All rights reserved.</p>
-
-
-
+     <footer>
+        <button id="buttonTop" title="Top">Return To Top</button>
+        <script>
+document.getElementById('buttonTop').addEventListener('click', function(){
+window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+        </script>
+        <p><a href="pageEditor_ST1.html" target="_blank">Page Editor</a></p>
+        <img src="images/logo.png" alt="logo" height="140" width="200">
+        <p></p>
+        <address>helth@westminster.ac.uk</address>
+        <p></p>
+        <p>© 2024 Helth. All rights reserved.</p>
     </footer>
 </body>
 </html>
